@@ -60,7 +60,7 @@ jobs:
           popd
 
       - name: Deploy Snapshot to Maven package
-        uses: Shinji-IkariG/action-maven-publish@v1
+        uses: Shinji-IkariG/action-maven-publish@master
         env:
          ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION: true
         with:
