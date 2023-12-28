@@ -60,9 +60,7 @@ jobs:
           popd
 
       - name: Deploy Snapshot to Maven package
-        uses: Shinji-IkariG/action-maven-publish@master
-        env:
-         ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION: true
+        uses: qcastel/github-actions-maven-release@master
         with:
           gpg_private_key: ${{ secrets.JAVA_GPG_PRIVATE_KEY }}
           gpg_passphrase: ${{ secrets.JAVA_GPG_PASSPHRASE }}
